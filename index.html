@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You</title>
+  <link rel="stylesheet" href="styke.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="text">Do you love me 💕🥺 ?</h1>
+    <button class="btn-yes">yes</button>
+    <button class="btn-no">no</button>
+  </div>
+
+  <script>
+    const text = document.querySelector(".text");
+    const btnyes = document.querySelector(".btn-yes");
+    const btnno = document.querySelector(".btn-no");
+
+    btnno.addEventListener("click", ()=>{
+      btnno.classList.toggle("moving");
+    });
+
+    btnyes.addEventListener("click", () => {
+      text.innerText = "I love you too crush❤️";
+      btnno.remove();
+      btnyes.remove();
+    });
+
+
+  </script>
+  
+</body>
+</html>
